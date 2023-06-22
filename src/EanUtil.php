@@ -1,6 +1,6 @@
 <?php
 
-namespace Celsonery\PhpEanUtils;
+namespace CelsoNery\PhpEanUtils;
 
 use \Exception;
 
