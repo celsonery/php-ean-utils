@@ -2,7 +2,6 @@
 A package utility to work with EANs/GTINs, for validate and generate fake EANs
 
 [![Maintainer](http://img.shields.io/badge/maintainer-@celsonery-blue.svg?style=flat-square)](https://twitter.com/celsonery)
-[![Source Code](http://img.shields.io/badge/source-celsonery/php-ean-utils-blue.svg?style=flat-square)](https://github.com/celsonery/php-ean-utils)
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/celsonery/php-ean-utils.svg?style=flat-square)](https://packagist.org/packages/celsonery/php-ean-utils)
 [![Latest Version](https://img.shields.io/github/release/celsonery/php-ean-utils.svg?style=flat-square)](https://github.com/celsonery/php-ean-utils/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
@@ -15,7 +14,7 @@ A package utility to work with EANs/GTINs, for validate and generate fake EANs
 This package available by Composer:
 
 ```bash
-"celsonery/php-ean-utils": "^1.0"
+"celsonery/php-ean-utils": "^1.2"
 ```
 
 or run
