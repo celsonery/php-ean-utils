@@ -24,6 +24,24 @@ or run
 composer require celsonery/php-ean-utils
 ```
 
+## How to use
+
+In your class import this trait
+```php
+use CelsoNery\EanUtils\Services\Traits\EanUtil;
+
+class YourClassName
+{
+    use EanUtil;
+    
+    public function yourMethod()
+    {
+        if ($this->isValid("7898114289779")) {
+            // Do something
+        }
+    }
+}
+```
 
 
 ## Contributing
@@ -38,8 +56,8 @@ Thank you
 
 ## Credits
 
-- [Celso Nery](https://github.com/celsonery) (Developer)
-- [All Contributors](https://github.com/celsonery/php-ean-utils/contributors) (This Rock)
+- [Celso Nery](https://github.com/celsonery) (Maintainer/Developer)
+- [All Contributors](https://github.com/celsonery/php-ean-utils/contributors)
 
 ## License
 
