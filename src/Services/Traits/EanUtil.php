@@ -88,7 +88,7 @@ trait EanUtil
      * @param string $ean
      * @return string
      */
-    private function fixLen(string $ean): string
+    protected function fixLen(string $ean): string
     {
         if (strlen($ean) < 8) {
             return $this->toEight($ean);
