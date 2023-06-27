@@ -5,8 +5,8 @@
     "keywords": [
         "ean",
         "gtin",
-        "validate ean/gtin",
-        "fix ean/gtin with zeros"
+        "validate ean gtin",
+        "fix ean gtin with zeros"
     ],
     "license": "MIT",
     "autoload": {
