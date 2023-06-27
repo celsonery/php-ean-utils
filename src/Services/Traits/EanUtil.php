@@ -30,22 +30,19 @@ trait EanUtil
      */
     private function isValidThirteen(string $ean): bool
     {
-        $digits = str_split($ean);
-        $dv = array_pop($digits);
-        $odd = 0;
-        $even = 0;
+        if ((!preg_match("/^[0-9]{13}$/", $ean)) || (strlen($ean) < 13))
+            return false;
 
-        foreach ($digits as $digit) {
-            if ($digit != 0) {
-                $odd += ($digit % 2 != 0) ? $digit : 0;
-                $even += ($digit % 2 == 0) ? $digit : 0;
-            }
-        }
+        $digits = str_split($ean);
+
+        $even = $digits[1] + $digits[3] + $digits[5] + $digits[7] + $digits[9] + $digits[11];
+        $odd = $digits[0] + $digits[2] + $digits[4] + $digits[6] + $digits[8] + $digits[10];
 
         $result = $odd + $even * 3;
         $checkSum = 10 - $result % 10;
 
-        return $checkSum == $dv;
+        return $checkSum == $digits[12];
+
     }
 
     /**
@@ -56,8 +53,8 @@ trait EanUtil
      */
     private function isValidEight(string $ean): bool
     {
-        // TODO: Generate method to verify if ean8 is Valid
-        return false;
+        $ean = $this->toThirteen($ean);
+        return $this->isValidThirteen($ean);
     }
 
     /**

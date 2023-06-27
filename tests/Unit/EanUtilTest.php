@@ -73,4 +73,49 @@ class EanUtilTest extends TestCase
     {
         $this->assertEquals("0789811428977", $this->fixLen("789811428977"));
     }
+
+    public function testIfEanEightIsValid50196081()
+    {
+        $this->assertTrue($this->isValid("50196081"));
+    }
+
+    public function testIfEanEightIsValid50196135()
+    {
+        $this->assertTrue($this->isValid("50196135"));
+    }
+
+    public function testIfEanEightIsValid50196388()
+    {
+        $this->assertTrue($this->isValid("50196388"));
+    }
+
+    public function testIfEanEightIsValid50196364()
+    {
+        $this->assertTrue($this->isValid("50196364"));
+    }
+
+    public function testIfEanEightIsValid50267521()
+    {
+        $this->assertTrue($this->isValid("50267521"));
+    }
+
+    public function testIfEanEightIsValid50267026()
+    {
+        $this->assertTrue($this->isValid("50267026"));
+    }
+
+    public function testIfEanEightIsValid78913769()
+    {
+        $this->assertTrue($this->isValid("78913769"));
+    }
+
+    public function testIfEanEightIsValid78913547()
+    {
+        $this->assertTrue($this->isValid("78913547"));
+    }
+
+    public function testIfEanEightIsValid78938793()
+    {
+        $this->assertTrue($this->isValid("78938793"));
+    }
 }
