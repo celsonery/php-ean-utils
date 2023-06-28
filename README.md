@@ -14,7 +14,7 @@ A package utility to work with EANs/GTINs, for validate and generate fake EANs
 This package available by Composer:
 
 ```bash
-"celsonery/php-ean-utils": "^1.2"
+"celsonery/php-ean-utils": "^1.3"
 ```
 
 or run
