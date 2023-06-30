@@ -31,7 +31,10 @@
         "platform": {
             "php": "8.1.0"
         },
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     },
     "scripts": {
         "tests": "vendor/bin/phpunit"
