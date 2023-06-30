@@ -25,13 +25,17 @@
         "php": "^8.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^10.2"
+        "phpunit/phpunit": "^10.2",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
     },
     "config": {
         "platform": {
             "php": "8.1.0"
         },
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     },
     "scripts": {
         "tests": "vendor/bin/phpunit"
